@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VelocityDrive | Premium Car Rental Experience</title>
+    <title>VelocityDrive | Elite Luxury & Performance Car Rentals</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,11 +13,11 @@
                 extend: {
                     colors: {
                         brand: {
-                            50: '#eef2ff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            900: '#312e81',
+                            50: '#fefce8',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            900: '#713f12',
                         }
                     }
                 }
@@ -27,55 +27,55 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Google Font Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(3, 7, 18, 0.95) 0%, rgba(17, 24, 39, 0.9) 100%);
         }
     </style>
 </head>
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-white transition-colors duration-300">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950 transition-colors duration-300">
 
     <!-- Navigation Bar -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all duration-300" id="navbar">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-xl border-b border-slate-800 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
-                <a href="#" class="flex items-center space-x-2">
-                    <div class="bg-brand-600 p-2.5 rounded-xl text-white shadow-lg shadow-brand-500/30">
-                        <i data-lucide="car" class="w-6 h-6"></i>
+                <a href="#" class="flex items-center space-x-3">
+                    <div class="bg-gradient-to-tr from-amber-600 to-amber-400 p-2.5 rounded-2xl text-slate-950 shadow-lg shadow-amber-500/20">
+                        <i data-lucide="key" class="w-6 h-6 stroke-[2.5]"></i>
                     </div>
-                    <span class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">Velocity<span class="text-brand-600">Drive</span></span>
+                    <span class="text-2xl font-extrabold tracking-tight text-white">Velocity<span class="text-amber-500">Drive</span></span>
                 </a>
 
                 <!-- Desktop Nav Links -->
-                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600 dark:text-slate-300">
-                    <a href="#home" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
-                    <a href="#fleet" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Fleet Catalog</a>
-                    <a href="#features" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Why Us</a>
-                    <a href="#testimonials" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Reviews</a>
-                    <a href="#contact" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Contact</a>
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-300">
+                    <a href="#home" class="hover:text-amber-400 transition-colors">Home</a>
+                    <a href="#fleet" class="hover:text-amber-400 transition-colors">Elite Fleet</a>
+                    <a href="#features" class="hover:text-amber-400 transition-colors">Privileges</a>
+                    <a href="#testimonials" class="hover:text-amber-400 transition-colors">Client Reviews</a>
+                    <a href="#contact" class="hover:text-amber-400 transition-colors">Concierge</a>
                 </nav>
 
                 <!-- Action Buttons & Theme Toggle -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <button onclick="toggleDarkMode()" class="p-2 rounded-xl text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="Toggle Theme">
-                        <i data-lucide="moon" id="theme-icon" class="w-5 h-5"></i>
+                    <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl text-slate-300 bg-slate-800/80 hover:bg-slate-800 transition-colors border border-slate-700/50" title="Toggle Theme">
+                        <i data-lucide="sun" id="theme-icon" class="w-5 h-5 text-amber-400"></i>
                     </button>
-                    <a href="#fleet" class="bg-slate-900 dark:bg-brand-600 hover:bg-slate-800 dark:hover:bg-brand-700 text-white font-medium px-5 py-2.5 rounded-xl transition-all shadow-md hover:shadow-lg">
-                        Book a Car
+                    <a href="#fleet" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                        Reserve Now
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="flex items-center space-x-2 md:hidden">
-                    <button onclick="toggleDarkMode()" class="p-2 rounded-xl text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800">
-                        <i data-lucide="moon" class="w-5 h-5"></i>
+                    <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl text-slate-300 bg-slate-800 border border-slate-700">
+                        <i data-lucide="sun" class="w-5 h-5 text-amber-400"></i>
                     </button>
-                    <button id="menu-btn" class="p-2 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                    <button id="menu-btn" class="p-2.5 rounded-xl text-slate-300 bg-slate-800 border border-slate-700">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -83,75 +83,271 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-6 space-y-3 shadow-xl">
-            <a href="#home" class="block py-2 text-slate-700 dark:text-slate-300 font-medium hover:text-brand-600">Home</a>
-            <a href="#fleet" class="block py-2 text-slate-700 dark:text-slate-300 font-medium hover:text-brand-600">Fleet Catalog</a>
-            <a href="#features" class="block py-2 text-slate-700 dark:text-slate-300 font-medium hover:text-brand-600">Why Us</a>
-            <a href="#testimonials" class="block py-2 text-slate-700 dark:text-slate-300 font-medium hover:text-brand-600">Reviews</a>
-            <a href="#contact" class="block py-2 text-slate-700 dark:text-slate-300 font-medium hover:text-brand-600">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 pt-4 pb-6 space-y-4 shadow-2xl">
+            <a href="#home" class="block py-2 text-slate-300 font-medium hover:text-amber-400">Home</a>
+            <a href="#fleet" class="block py-2 text-slate-300 font-medium hover:text-amber-400">Elite Fleet</a>
+            <a href="#features" class="block py-2 text-slate-300 font-medium hover:text-amber-400">Privileges</a>
+            <a href="#testimonials" class="block py-2 text-slate-300 font-medium hover:text-amber-400">Client Reviews</a>
+            <a href="#contact" class="block py-2 text-slate-300 font-medium hover:text-amber-400">Concierge</a>
             <div class="pt-2">
-                <a href="#fleet" class="block w-full text-center bg-brand-600 text-white font-medium py-3 rounded-xl shadow-md">Book a Car</a>
+                <a href="#fleet" class="block w-full text-center bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold py-3 rounded-xl shadow-lg">Reserve Now</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-slate-900 overflow-hidden text-white">
-        <!-- Background Overlay Image -->
-        <div class="absolute inset-0 opacity-40 mix-blend-overlay">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=80" alt="Luxury Car Background" class="w-full h-full object-cover">
+    <section id="home" class="relative pt-36 pb-24 md:pt-48 md:pb-36 bg-slate-950 overflow-hidden text-white">
+        <!-- Background Immersive Image -->
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=2000&q=80" alt="Supercar Background" class="w-full h-full object-cover">
         </div>
         <div class="absolute inset-0 hero-gradient"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center space-y-6">
-                <span class="inline-flex items-center space-x-2 bg-brand-500/20 border border-brand-500/30 text-brand-400 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i>
-                    <span>Premium & Electric Car Rentals</span>
+                <span class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase shadow-inner">
+                    <i data-lucide="crown" class="w-4 h-4"></i>
+                    <span>Exquisite Supercar & Luxury Rentals</span>
                 </span>
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-                    Drive Your Dream Car Today, <span class="text-brand-500">Without the Hassle.</span>
+                <h1 class="text-4xl sm:text-7xl font-extrabold tracking-tight leading-none">
+                    Command the Road in <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Unrivaled Elegance.</span>
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-300 font-normal max-w-2xl mx-auto">
-                    Experience top-tier luxury, eco-friendly electrics, and rugged SUVs at competitive daily rates with zero hidden fees.
+                <p class="text-lg sm:text-xl text-slate-400 font-normal max-w-2xl mx-auto leading-relaxed">
+                    Indulge in our curated stable of world-class hypercars, executive sedans, and ultra-luxury SUVs delivered straight to your door.
                 </p>
             </div>
 
             <!-- Quick Search / Booking Widget Bar -->
-            <div class="mt-12 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 rounded-3xl shadow-2xl p-6 sm:p-8 max-w-5xl mx-auto border border-slate-100 dark:border-slate-800">
+            <div class="mt-14 bg-slate-900/90 backdrop-blur-2xl text-white rounded-3xl shadow-2xl p-6 sm:p-8 max-w-5xl mx-auto border border-slate-800">
                 <form id="hero-search-form" class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
                     <!-- Location Input -->
                     <div class="space-y-1.5">
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center space-x-1">
-                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-600"></i>
-                            <span>Pickup Location</span>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center space-x-1">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                            <span>Delivery Hub</span>
                         </label>
-                        <select id="search-location" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
-                            <option value="New York Downtown">New York Downtown</option>
-                            <option value="JFK Airport Terminal 4">JFK Airport Terminal 4</option>
-                            <option value="Los Angeles City Center">Los Angeles City Center</option>
-                            <option value="San Francisco Bay Area">San Francisco Bay Area</option>
-                            <option value="Miami Beach Hub">Miami Beach Hub</option>
+                        <select id="search-location" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                            <option value="Beverly Hills Flagship, CA">Beverly Hills Flagship, CA</option>
+                            <option value="Manhattan Penthouse Hub, NY">Manhattan Penthouse Hub, NY</option>
+                            <option value="Miami Brickell Suite, FL">Miami Brickell Suite, FL</option>
+                            <option value="Las Vegas Strip Lounge, NV">Las Vegas Strip Lounge, NV</option>
                         </select>
                     </div>
 
                     <!-- Pickup Date -->
                     <div class="space-y-1.5">
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center space-x-1">
-                            <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-600"></i>
-                            <span>Pickup Date</span>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center space-x-1">
+                            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                            <span>Start Date</span>
                         </label>
-                        <input type="date" id="search-pickup" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-brand-500 focus:outline-none" required>
+                        <input type="date" id="search-pickup" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-amber-500 focus:outline-none" required>
                     </div>
 
                     <!-- Dropoff Date -->
                     <div class="space-y-1.5">
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center space-x-1">
-                            <i data-lucide="calendar-check" class="w-3.5 h-3.5 text-brand-600"></i>
-                            <span>Dropoff Date</span>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center space-x-1">
+                            <i data-lucide="calendar-check" class="w-3.5 h-3.5"></i>
+                            <span>Return Date</span>
                         </label>
-                        <input type="date" id="search-dropoff" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-brand-500 focus:outline-none" required>
+                        <input type="date" id="search-dropoff" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-amber-500 focus:outline-none" required>
                     </div>
 
                     <!-- Submit Button -->
-                    <div class="pt-6 md:
+                    <div class="pt-6 md:pt-0">
+                        <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold py-3.5 px-6 rounded-xl transition-all shadow-lg shadow-amber-500/20 flex items-center justify-center space-x-2">
+                            <i data-lucide="search" class="w-5 h-5"></i>
+                            <span>Explore Fleet</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="bg-slate-900 border-y border-slate-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 border-r border-slate-800/60 last:border-none">
+                    <div class="text-3xl font-black text-amber-400">120+</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">Exotic & Luxury Cars</div>
+                </div>
+                <div class="p-4 border-r border-slate-800/60 last:border-none">
+                    <div class="text-3xl font-black text-amber-400">15+</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">Metropolitan Hubs</div>
+                </div>
+                <div class="p-4 border-r border-slate-800/60 last:border-none">
+                    <div class="text-3xl font-black text-amber-400">VIP</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">White-Glove Delivery</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl font-black text-amber-400">5.0★</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Catalog Section -->
+    <section id="fleet" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-amber-400 font-bold uppercase tracking-widest text-xs">Our Stable</span>
+                <h2 class="text-3xl font-black tracking-tight sm:text-5xl mt-2 text-white">The Elite Fleet Catalog</h2>
+                <p class="mt-3 text-slate-400">Hand-selected masterworks of engineering, maintenance-free and ready to perform.</p>
+
+                <!-- Filter Buttons -->
+                <div id="filter-container" class="flex flex-wrap justify-center gap-2 mt-8">
+                    <button data-filter="all" class="filter-btn active-filter bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl transition-all shadow-md">All Masterpieces</button>
+                    <button data-filter="supercar" class="filter-btn bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium px-5 py-2.5 rounded-xl transition-all border border-slate-800">Supercars</button>
+                    <button data-filter="suv" class="filter-btn bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium px-5 py-2.5 rounded-xl transition-all border border-slate-800">Ultra SUVs</button>
+                    <button data-filter="luxury" class="filter-btn bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium px-5 py-2.5 rounded-xl transition-all border border-slate-800">Executive Luxury</button>
+                    <button data-filter="electric" class="filter-btn bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium px-5 py-2.5 rounded-xl transition-all border border-slate-800">Electric Power</button>
+                </div>
+            </div>
+
+            <!-- Car Cards Grid -->
+            <div id="car-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically rendered via JS with real photography -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Privileges -->
+    <section id="features" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-amber-400 font-bold uppercase tracking-widest text-xs">VelocityDrive Privileges</span>
+                <h2 class="text-3xl font-black tracking-tight sm:text-5xl mt-2 text-white">The Ultimate Standard</h2>
+                <p class="mt-3 text-slate-400">Designed for discerning drivers who expect absolute perfection at every turn.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Privilege 1 -->
+                <div class="bg-slate-950 border border-slate-800/80 p-8 rounded-3xl shadow-xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Comprehensive Coverage</h3>
+                    <p class="text-slate-400 leading-relaxed">Full zero-deductible physical damage waiver, theft protection, and 24-hour concierge incident response included.</p>
+                </div>
+
+                <!-- Privilege 2 -->
+                <div class="bg-slate-950 border border-slate-800/80 p-8 rounded-3xl shadow-xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="truck" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">White-Glove Delivery</h3>
+                    <p class="text-slate-400 leading-relaxed">Your vehicle arrives in an enclosed trailer, pristine and fueled, directly to your residence, hotel tarmac, or private jet hangar.</p>
+                </div>
+
+                <!-- Privilege 3 -->
+                <div class="bg-slate-950 border border-slate-800/80 p-8 rounded-3xl shadow-xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="clock" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Absolute Discretion</h3>
+                    <p class="text-slate-400 leading-relaxed">Private billing, confidential client profiling, and completely unmarked delivery options for high-profile principals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section id="testimonials" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-amber-400 font-bold uppercase tracking-widest text-xs">Testimonials</span>
+                <h2 class="text-3xl font-black tracking-tight sm:text-5xl mt-2 text-white">Praised by Connoisseurs</h2>
+                <p class="mt-3 text-slate-400">Discover why executives, artists, and motorsport enthusiasts trust VelocityDrive.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl relative shadow-xl">
+                    <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">"Renting the Lamborghini Huracán was seamless. Delivered right to my Beverly Hills hotel villa in immaculate condition. Absolutely world-class."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-amber-600 to-amber-400 rounded-full flex items-center font-bold justify-center text-slate-950">DK</div>
+                        <div>
+                            <div class="font-bold text-white">Dante King</div>
+                            <div class="text-xs text-amber-400/80">Film Producer, Los Angeles</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl relative shadow-xl">
+                    <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">"The Rolls-Royce Ghost set the exact tone for our corporate summit in Manhattan. Flawless communication and absolute punctuality."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-amber-600 to-amber-400 rounded-full flex items-center font-bold justify-center text-slate-950">VS</div>
+                        <div>
+                            <div class="font-bold text-white">Victoria Sterling</div>
+                            <div class="text-xs text-amber-400/80">Managing Director, New York</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl relative shadow-xl">
+                    <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">"Cruising the Miami coast in a Ferrari F8 Spider was an unforgettable experience. The team at VelocityDrive accommodated my last-minute schedule effortlessly."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-amber-600 to-amber-400 rounded-full flex items-center font-bold justify-center text-slate-950">MC</div>
+                        <div>
+                            <div class="font-bold text-white">Matteo Cruz</div>
+                            <div class="text-xs text-amber-400/80">Tech Entrepreneur, Miami</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Newsletter Section -->
+    <section id="contact" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-amber-600 to-amber-800 text-white rounded-3xl p-8 sm:p-16 relative overflow-hidden shadow-2xl">
+                <div class="absolute -right-16 -bottom-16 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="relative max-w-2xl space-y-6">
+                    <span class="text-amber-200 font-bold uppercase tracking-widest text-xs">Private Access</span>
+                    <h2 class="text-3xl sm:text-4xl font-black tracking-tight">Join the Elite Club & Receive Private Releases</h2>
+                    <p class="text-amber-100">Subscribe for early reservations on newly acquired hypercars, seasonal Alpine tours, and private track day invitations.</p>
+                    <form onsubmit="handleNewsletter(event)" class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <input type="email" id="newsletter-email" placeholder="Enter your private email address" class="bg-slate-950/80 border border-amber-500/40 text-white px-5 py-3.5 rounded-xl flex-1 focus:outline-none focus:ring-2 focus:ring-white text-sm placeholder:text-slate-500" required>
+                        <button type="submit" class="bg-slate-950 hover:bg-slate-900 text-amber-400 font-bold px-8 py-3.5 rounded-xl transition-all shadow-lg">Request Access</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="bg-amber-500 p-2 rounded-xl text-slate-950">
+                            <i data-lucide="key" class="w-5 h-5 stroke-[2.5]"></i>
+                        </div>
+                        <span class="text-xl font-black text-white">Velocity<span class="text-amber-500">Drive</span></span>
